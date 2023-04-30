@@ -1,0 +1,120 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Shortner</title>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- As a heading -->
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">URL SHORTNER</span>
+      </div>
+    </nav>
+    <div class="container shadow-4 rounded border border-primary m-5 p-5">
+      <h1 class="text-center">URL Shortner</h1>
+      <p class="text-center">
+
+        A URL shortener website is a simple and efficient tool for shortening
+        long, cumbersome URLs into shorter, more manageable ones. With just a
+        few clicks, users can create a shorter link that is easy to share on
+        social media, email, or other platforms. Our URL shortener website
+        provides a reliable, secure, and user-friendly service, allowing you to
+        quickly create and share shortened URLs that can help increase your
+        online presence and brand visibility. Whether you're a marketer,
+        blogger, or social media influencer, our URL shortener website can help
+        streamline your online marketing efforts and make it easier to connect
+        with your audience.
+      </p><hr />
+      <form>
+        <label for="longurl" class="mb-2">Long Url</label>
+        <input
+          type="url"
+          placeholder="link..."
+          id="longurl"
+          class="form-control mb-2"
+        />
+        <button class="btn btn-primary btn-lg">Short It</button>
+      </form>
+    </div>
+    <div class="container shadow-4 rounded border border-primary m-5 p-5">
+      <h2>Recently Shorten Links</h2><hr />
+      <ul class="list-unstyled" id="recents">
+      </ul>
+    </div>
+    <div class="container shadow-4 rounded border border-primary m-5 p-5">
+      <h3 class="text-center">
+        Disclaimer:
+      </h3>
+      <p class="text-center">
+        Our URL shortener website is provided on an "as is" basis without any
+        representations or warranties, express or implied. We make no
+        representations or warranties in relation to the accuracy or reliability
+        of the information provided on this website.
+      </p>
+      <hr />
+      <h3 class="text-center">
+        Privacy Policy:
+      </h3>
+      <p>
+        We take your privacy seriously and are committed to protecting your
+        personal information. This privacy policy outlines the types of
+        information we collect, how we use it, and how we protect it.
+      </p>
+      <p><strong>Information we collect:</strong></p>
+      <p><strong>When you use our URL shortener website, we collect the
+          following information:</strong></p>
+      <ul class="list-unstyled">
+        <li class="mb-1"><i
+            class="fas fa-check-circle me-2 text-success"
+          ></i>The original URL you entered</li>
+        <li class="mb-1"><i
+            class="fas fa-check-circle me-2 text-success"
+          ></i>The shortened URL we generate</li>
+      </ul>
+      <p><strong>How we use your information:</strong></p>
+      <p>We use the information we collect to provide you with our URL shortener
+        service, to improve our service, and to protect against abuse or misuse.
+        We do not sell or share your personal information with third parties.</p>
+      <p><strong>How we protect your information:</strong></p>
+      <p>
+        We take appropriate measures to protect your personal information from
+        unauthorized access, disclosure, alteration, or destruction. We use SSL
+        encryption to secure data transmission and implement strict security
+        procedures to ensure that your information is stored securely.
+      </p>
+      <p><strong>Changes to this policy:</strong></p>
+      <p>We reserve the right to modify this privacy policy at any time. Any
+        changes will be posted on our website, and your continued use of our URL
+        shortener website will signify your acceptance of those changes.</p>
+      <p>If you have any questions or concerns about our privacy policy or how
+        we handle your personal information, please contact us.</p>
+    </div>
+    <footer class="text-center text-white shadow-3 bg-primary">
+
+      <!-- Copyright -->
+      <div class="text-center p-3">
+        © 2024 Copyright:
+        <a class="text-white" href=".">URL Shortner</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <script src="/short.js"></script>
+  </body>
+</html>
