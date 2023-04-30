@@ -10,6 +10,7 @@ form.addEventListener("submit", (e) => {
   })
     .then((res) => res.json())
     .then((data) => {
+      console.log(data);
       url.value = document.URL + data.short;
       recent();
     })
