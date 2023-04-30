@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const fs = require("fs");
+const fs = require("@cyclic.sh/s3fs");
 const crypto = require("crypto");
 app.set("view engine", "hbs");
 app.use(express.json());
