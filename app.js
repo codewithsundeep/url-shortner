@@ -24,12 +24,11 @@ function shortAndSave(url) {
         data: all,
       };
       //   console.log("new json is", newjson);
-      fs.chmod(__dirname + "/shorts.json", 0o600, () => {
-        try {
-          fs.writeFileSync(__dirname + "/shorts.json", JSON.stringify(newjson));
-          resolve({ short: id, long: url });
-        } catch (err) {
+      fs.writeFile("./shorts.json", JSON.stringify(newjson), (err) => {
+        if (err) {
           reject(err);
+        } else {
+          resolve({ long: url, short: id });
         }
       });
     } else {
