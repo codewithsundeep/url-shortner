@@ -24,7 +24,7 @@ function shortAndSave(url) {
         data: all,
       };
       //   console.log("new json is", newjson);
-      fs.writeFile("shorts.json", JSON.stringify(newjson), (err) => {
+      fs.writeFile("/shorts.json", JSON.stringify(newjson), (err) => {
         if (err) {
           reject(err);
         } else {
