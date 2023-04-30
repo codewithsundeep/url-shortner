@@ -40,14 +40,14 @@ function shortAndSave(url) {
 app.get("/", (req, res) => {
   res.render("main");
 });
-app.post("/", async (req, res) => {
-  //   console.log(req.body.url);
-  try {
-    let dt = await shortAndSave(req.body.url);
-    res.send(dt);
-  } catch (err) {
-    res.status(400).send(err);
-  }
+app.post("/", (req, res) => {
+  shortAndSave(req.body.url)
+    .then((dt) => {
+      res.send(dt);
+    })
+    .catch((err) => {
+      res.status(400).send(err);
+    });
 });
 app.get("/recent", (req, res) => {
   let sort = require("./shorts.json");

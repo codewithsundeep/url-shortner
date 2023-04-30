@@ -28,7 +28,7 @@ function recent() {
           acc +
           ` <li class="mb-1"><i
             class="fas fa-long-arrow-alt-right me-2 text-info"
-          ></i><a href="${shortUrl}">${shortUrl}</a></li>`
+          ></i><a href="${shortUrl}"target="_blank">${shortUrl}</a></li>`
         );
       }, "");
       document.querySelector("#recents").innerHTML = reducer;
